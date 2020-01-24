@@ -1,0 +1,79 @@
+body, p {
+    margin: 0;
+    padding: 0;
+}
+input:focus, button:focus {
+    outline: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 64px 6%;
+}
+.title_aut {
+    padding: 32px;
+}
+
+.title_aut span:first-child:after{
+    content: '/';
+    margin: 0 16px;
+    color: #000;
+}
+.active{
+    color: blue;
+}
+.link {
+    cursor: pointer;
+}
+.register {
+    display: none;
+}
+.title_form {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+.form_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.form_input span {
+    margin-bottom: 8px;
+}
+.input_name {
+    border:2px solid grey;
+    padding: 8px;
+    font-size: 16px;
+}
+.form_container {
+    width: 60%;
+    padding: 64px 32px;
+}
+.form_button button {
+    padding: 8px 12px;
+    border:0;
+    background: #337ab7;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+.form_button button:hover {
+ background: #286090;
+}
+.error {
+    border:2px solid red;
+}
+input ~ .error {
+    border:0;
+    color: red
+}
+
+input:focus {
+    border:2px solid blue;
+}
+.modal {
+    display: none;
+}
